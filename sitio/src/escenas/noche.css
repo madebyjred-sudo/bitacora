@@ -1,0 +1,25 @@
+.noc .noc-fila {
+  grid-template-columns: 17ch auto;
+}
+
+.noc .noc-dia {
+  color: #8b8e92;
+}
+
+.noc .noc-sat {
+  top: 76px;
+  left: 378px;
+  width: 134px;
+}
+
+.noc .ss-stage[data-layout='compact'] .noc-fila {
+  grid-template-columns: 16ch auto;
+}
+
+.noc .ss-stage[data-layout='compact'] .noc-sat {
+  top: auto;
+  bottom: 28px;
+  left: auto;
+  right: 20px;
+  width: 116px;
+}

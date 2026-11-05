@@ -1,0 +1,18 @@
+{
+  "name": "bitacora",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lo que tus agentes hicieron hoy, verificado, escrito donde tu equipo lo lee. Y el viernes, tus horas.",
+  "type": "module",
+  "bin": {
+    "bitacora": "bin/bitacora.mjs"
+  },
+  "files": ["bin", "src", "skills"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "license": "MIT"
+}

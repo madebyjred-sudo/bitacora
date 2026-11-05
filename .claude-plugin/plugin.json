@@ -1,0 +1,8 @@
+{
+  "name": "bitacora",
+  "version": "0.1.0",
+  "description": "Reads what your coding agents did today, detects the project of each session by the files it touched, and writes a verified progress note per project. On Fridays it proposes your timesheet with evidence.",
+  "author": { "name": "madebyjred", "url": "https://github.com/madebyjred-sudo" },
+  "license": "MIT",
+  "keywords": ["claude-code", "standup", "progress", "timesheet", "notion", "git", "agents"]
+}

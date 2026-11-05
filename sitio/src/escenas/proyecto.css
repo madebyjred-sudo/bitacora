@@ -1,0 +1,107 @@
+/* Por archivos: a list of sessions in a plain macOS window on grafito. Each
+   row is a title, where it was opened, and the project it goes to on the
+   right; what it touched opens under it in mono. */
+
+.pro .pro-lista {
+  /* Only the part of the window the stage shows: 550 - 40 */
+  width: 510px;
+  padding: 8px 0 0;
+  transition: opacity var(--dur-media) ease;
+}
+
+.pro .pro-lista[data-dip] {
+  opacity: 0;
+}
+
+.pro .pro-ses {
+  padding: 10px 20px 10px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+}
+
+.pro .pro-ses__cab {
+  display: grid;
+  grid-template-columns: 112px 1fr 150px;
+  align-items: center;
+  gap: 12px;
+  min-height: 24px;
+}
+
+.pro .pro-ses__t {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d1d1f;
+  white-space: nowrap;
+}
+
+.pro .pro-ses__desde {
+  font-size: 12.5px;
+  color: #6e6e73;
+  white-space: nowrap;
+}
+
+.pro .pro-ses__va {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pro .pro-chips {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.pro .pro-vacio {
+  width: 0;
+  padding: 0;
+  background: none;
+}
+
+.pro .pro-toques {
+  padding: 6px 0 2px;
+}
+
+.pro .pro-toque {
+  display: grid;
+  grid-template-columns: 6ch auto;
+  font-family: var(--ss-mono);
+  font-size: 11.5px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+
+.pro .pro-toque__h {
+  color: #8e8e93;
+}
+
+.pro .pro-toque__r {
+  color: #3a3a3c;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-lista {
+  width: 380px;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-ses {
+  padding: 8px 14px;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-ses__cab {
+  grid-template-columns: auto auto 1fr;
+  gap: 8px;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-ses__va {
+  justify-content: flex-end;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-ses__t {
+  font-size: 12.5px;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-ses__desde {
+  font-size: 12px;
+}
+
+.pro .ss-stage[data-layout='compact'] .pro-toque {
+  font-size: 11px;
+  line-height: 17px;
+}

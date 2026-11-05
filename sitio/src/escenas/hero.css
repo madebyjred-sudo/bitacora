@@ -1,0 +1,177 @@
+/* Hero bento: 550 × 372, the column's width as on benji.org. Two rows
+   (200 + 164, gap 8), columns 334 + 208. Tiles radius 12: grafito and light
+   grey carry the demos' ASCII grounds, the hours sit on the deep white, and
+   the coral one is the page's single lit tile. */
+
+.hro .ss-stage {
+  overflow: visible;
+  background: transparent;
+}
+
+.hro .hro-grid {
+  display: grid;
+  grid-template-columns: 334px 208px;
+  grid-template-rows: 200px 164px;
+  gap: 8px;
+  height: 100%;
+}
+
+.hro .hro-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* A · the written note on grafito */
+.hro .hro-a {
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  background: var(--grafito) url('./fondos/grafito.svg') 0 0 / 550px 440px no-repeat;
+}
+
+.hro .hro-nota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.12),
+    0 18px 40px -12px rgba(var(--sombra), 0.45),
+    0 6px 14px -8px rgba(var(--sombra), 0.3);
+}
+
+.hro .hro-nota__t {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #1d1d1f;
+}
+
+.hro .hro-nota__h {
+  margin: 8px 0 2px;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #6e6e73;
+}
+
+.hro .hro-nota__l {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #1d1d1f;
+  white-space: nowrap;
+}
+
+.hro .hro-nota__l code {
+  font-family: var(--ss-mono);
+  font-size: 11.5px;
+  color: var(--coral-tinta);
+}
+
+/* B · the day's hours on the deep white */
+.hro .hro-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 22px;
+  background: var(--blanco-hondo);
+}
+
+.hro .hro-b__cab {
+  font-size: 13px;
+  font-weight: 500;
+  color: #3a3a3c;
+}
+
+.hro .hro-b__n {
+  margin-top: 8px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--tinta);
+  font-variant-numeric: tabular-nums;
+}
+
+.hro .hro-b__pie {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--gris);
+}
+
+/* C · the terminal on the light grey, cut by the tile like the demos' frames */
+.hro .hro-c {
+  background: var(--gris-claro) url('./fondos/claro.svg') 0 0 / 550px 440px no-repeat;
+}
+
+.hro .hro-term {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 360px;
+  height: 180px;
+  box-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.16),
+    0 18px 40px -10px rgba(var(--sombra), 0.38);
+}
+
+.hro .hro-term__cuerpo {
+  padding: 4px 16px 0;
+  font-family: var(--ss-mono);
+  font-size: 11.5px;
+  line-height: 21px;
+  color: #ececee;
+}
+
+.hro .hro-term__cuerpo .fila {
+  grid-template-columns: 8ch max-content;
+}
+
+/* D · a redacted key on the coral tile: the coral is the ground, the text
+   sits on white (ink on coral is 3.9:1) */
+.hro .hro-d {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: var(--coral);
+}
+
+.hro .hro-d__carta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--tinta);
+  font-family: var(--ss-mono);
+  font-size: 11px;
+  line-height: 16px;
+  box-shadow: 0 10px 24px -12px rgba(var(--sombra), 0.45);
+}
+
+.hro .hro-d__marca {
+  align-self: flex-start;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--coral-velo);
+}
+
+/* Compact: one column, the four tiles stacked */
+.hro .ss-stage[data-layout='compact'] .hro-grid {
+  grid-template-columns: 358px;
+  grid-template-rows: 200px 128px 164px 86px;
+}
+
+.hro .ss-stage[data-layout='compact'] .hro-term {
+  width: 320px;
+}

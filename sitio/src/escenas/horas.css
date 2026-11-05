@@ -1,0 +1,75 @@
+/* Horas: the proposed CSV as a plain table. Tabular figures, a hairline per
+   row, and the held row on the coral veil. */
+
+.hrs .hrs-tabla {
+  width: 510px;
+  padding: 12px 20px 0;
+}
+
+.hrs .hrs-f {
+  will-change: transform;
+}
+
+/* The loop's reset dips the rows that arrived; the first ones stay */
+.hrs .hrs-fila {
+  transition: opacity var(--dur-media) ease;
+}
+
+.hrs .hrs-fila[data-dip] {
+  opacity: 0;
+}
+
+.hrs .hrs-f {
+  display: grid;
+  grid-template-columns: 52px 128px 64px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 7px 8px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+  font-size: 13px;
+  line-height: 19px;
+  color: #1d1d1f;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.hrs .hrs-f--cab {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6e6e73;
+}
+
+.hrs .hrs-n {
+  text-align: right;
+}
+
+.hrs .hrs-f[data-c='C'] {
+  border-radius: 6px;
+  background: var(--coral-velo);
+}
+
+.hrs .hrs-sat {
+  top: 276px;
+  left: 372px;
+  width: 140px;
+}
+
+.hrs .ss-stage[data-layout='compact'] .hrs-tabla {
+  width: 380px;
+  padding: 10px 12px 0;
+}
+
+.hrs .ss-stage[data-layout='compact'] .hrs-f {
+  grid-template-columns: 34px 92px 44px 1fr;
+  gap: 8px;
+  padding: 6px 6px;
+  font-size: 12px;
+}
+
+.hrs .ss-stage[data-layout='compact'] .hrs-sat {
+  top: auto;
+  bottom: 22px;
+  left: auto;
+  right: 20px;
+  width: 112px;
+}

@@ -1,0 +1,26 @@
+/* The page's palette, from Pantone: grey is the structure, coral is the
+   light. Coral marks what Bitácora flags: the lit glyphs of the grounds, the
+   wordmark's period, the line it strikes. As text it goes one step darker.
+
+   Bright White   PANTONE 11-0601 TCX    #f4f5f0   the ground
+   Grafito        PANTONE Cool Gray 11 C #53565a   buttons, selection, dark grounds
+   Gris claro     PANTONE Cool Gray 1 C  #d9d9d6   the light grounds of the scenes
+   Coral          PANTONE 7417 C         #e04e39   the light */
+
+:root {
+  --blanco: #f4f5f0;
+  --grafito: #53565a;
+  --gris-claro: #d9d9d6;
+  --coral: #e04e39;
+
+  /* Derived, same families, each pair measured for contrast */
+  --tinta: #232426; /* 14:1 on blanco */
+  --gris: #5f6266; /* secondary text, 4.5:1 on blanco and on blanco-hondo */
+  --blanco-hondo: #e6e7e3;
+  --coral-velo: #fbe3de; /* highlight behind text: tinta on it 12.7:1 */
+  --coral-hondo: #c8402d; /* coral strokes on white (non-text) */
+  --coral-tinta: #b5382a; /* coral as small text: 5.4:1 on blanco, 4.8:1 on coral-velo */
+  --coral-claro: #e8604c; /* coral as text on the terminal: 4.8:1 on terminal */
+  --terminal: #1f2022;
+  --sombra: 30, 31, 33;
+}

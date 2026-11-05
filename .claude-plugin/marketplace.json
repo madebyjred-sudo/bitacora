@@ -1,0 +1,12 @@
+{
+  "name": "madebyjred",
+  "owner": { "name": "madebyjred", "url": "https://github.com/madebyjred-sudo" },
+  "metadata": { "description": "Skills by madebyjred, built from tools that run in production." },
+  "plugins": [
+    {
+      "name": "bitacora",
+      "source": "./",
+      "description": "Verified daily progress notes from your agents' sessions and git, per project, plus a proposed timesheet."
+    }
+  ]
+}

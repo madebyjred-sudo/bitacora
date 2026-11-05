@@ -1,0 +1,13 @@
+.hoy .hoy-sat {
+  top: 236px;
+  left: 372px;
+  width: 140px;
+}
+
+.hoy .ss-stage[data-layout='compact'] .hoy-sat {
+  top: auto;
+  bottom: 28px;
+  left: auto;
+  right: 20px;
+  width: 120px;
+}
